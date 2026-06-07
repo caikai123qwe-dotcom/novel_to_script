@@ -1,0 +1,160 @@
+schema_version: 2.0_gemini
+meta:
+  title: "我的小说"
+  source_type: novel
+  source_chapter_count: 3
+  language: zh
+  input_digest: dc09db2f61ac
+story:
+  logline: "十年后，陆铭因挚友顾长明的离奇死亡重返故乡，与心怀芥蒂的旧友谢云重聚，凭借一封揭露十年前致命火灾真相的遗信，两人被迫联手踏上寻找藏匿证据的危险旅程。"
+  theme: "对过去懦弱的清算与人性的自我救赎"
+  setting: "一座潮湿、阴郁、充满旧日阴影与烟火气的南方小城"
+  tone: "悬疑冷峻、压抑怀旧"
+  premise: "Google Gemini 模型根据全文深度语义理解生成的结构化剧本骨架。"
+  characters:
+    -
+      name: "陆铭"
+      role: protagonist
+      description: "十年后重返故乡的归来者。冷静、坚定，背负着对过去的愧疚，誓要查清挚友死亡的真相。"
+      traits:
+        - "冷静"
+        - "执着"
+        - "内疚"
+        - "行动力强"
+    -
+      name: "谢云"
+      role: supporting
+      description: "陆铭的旧友，十年来一直留在故乡。外表冷漠克制，内心深藏着对陆铭不告而别的愤怒以及对过去的逃避。"
+      traits:
+        - "克制"
+        - "沙哑"
+        - "外冷内热"
+        - "疲惫"
+    -
+      name: "顾长明"
+      role: supporting
+      description: "陆铭与谢云的挚友，三天前在旧仓库离奇死亡。他是当年唯一没有选择闭上眼睛的人，用生命留下了揭开真相的线索。"
+      traits:
+        - "工整"
+        - "执拗"
+        - "勇敢"
+acts:
+  -
+    title: "第一章 归来者"
+    summary: "深秋深夜，陆铭回到阔别十年的故乡，在城门外与充满敌意的旧友谢云重逢，并带回了三人组之一顾长明的死讯，打破了平静。"
+    purpose: "引入核心危机，建立主角与主要配角的关系，抛出核心悬念（顾长明之死）。"
+    scenes:
+      -
+        location: "古城门外"
+        time: "深秋深夜"
+        goal: "陆铭试图向谢云传达顾长明的死讯，而谢云则在质问陆铭回来的目的。"
+        conflict: "十年的隔阂与未消的怒气，阻碍了两人之间的坦诚沟通。"
+        beats:
+          -
+            order: 1
+            action: "陆铭伫立在城门外，望着远处的灯火，感受着故乡熟悉而压抑的气味。"
+            emotional_shift: "从惆怅怀旧转为压抑沉重"
+          -
+            order: 2
+            action: "谢云在陆铭身后现身，用沙哑克制的声音冷酷质问其归来目的。"
+            emotional_shift: "对立与紧张感上升"
+          -
+            order: 3
+            action: "陆铭没有回头，直接抛出顾长明的死讯，空气瞬间凝固，谢云走到他身边并肩而立。"
+            emotional_shift: "震惊、悲伤与宿命般的重聚"
+        characters:
+          - "陆铭"
+          - "谢云"
+        dialogue_candidates:
+          -
+            speaker: "谢云"
+            line: "你回来干什么。"
+            intent: "表达对陆铭不告而别十年的愤怒、排斥与防备。"
+          -
+            speaker: "陆铭"
+            line: "有人死了，和我们有关。"
+            intent: "用无法逃避的危机打破僵局，强行将谢云拉回同一战线。"
+          -
+            speaker: "谢云"
+            line: "谁？"
+            intent: "克制之下的极度震惊与不安。"
+  -
+    title: "第二章 旧伤"
+    summary: "在谢云家的堂屋里，陆铭详细说明了顾长明的死因及现场留下的三人专属暗号信件，迫使谢云面对无法逃避的过去。"
+    purpose: "展现人物内心的挣扎与逃避，通过关键道具（信件/暗号）强化悬疑感，推进合作契机。"
+    scenes:
+      -
+        location: "谢云家的堂屋"
+        time: "深夜"
+        goal: "陆铭要让谢云相信顾长明之死并非意外，并促使他参与调查；谢云则试图保持距离。"
+        conflict: "谢云对过去的逃避态度与陆铭步步紧逼的现实之间的冲突。"
+        beats:
+          -
+            order: 1
+            action: "陆铭在堂屋向谢云讲述顾长明在旧仓库的死状及警方的判定，谢云面无表情地听着。"
+            emotional_shift: "压抑的平静与暗流涌动"
+          -
+            order: 2
+            action: "陆铭从外套内侧取出一封画有“圈中十字”暗号的信件放在桌上，谢云盯着信件却不敢触碰。"
+            emotional_shift: "悬疑感升级，谢云内心防线动摇"
+          -
+            order: 3
+            action: "谢云走到窗边，看着街上热闹的小贩，指出顾长明早已预知死亡。"
+            emotional_shift: "悲哀与宿命感"
+        characters:
+          - "陆铭"
+          - "谢云"
+        dialogue_candidates:
+          -
+            speaker: "陆铭"
+            line: "因为你最了解他，也因为这件事你跑不掉。"
+            intent: "点明利害关系，斩断谢云的退路，逼其面对现实。"
+          -
+            speaker: "谢云"
+            line: "他知道自己会死。"
+            intent: "意识到事态的严重性与危险性，内心产生动摇。"
+  -
+    title: "第三章 真相的形状"
+    summary: "两人共同阅读顾长明的遗信，得知十年前的火灾并非意外，且旧宅地板下藏有证据。最终，两人放下积怨，决定连夜前往旧宅寻找真相。"
+    purpose: "揭示核心阴谋（十年前的火灾），促成主角两人的正式结盟，完成本阶段的戏剧动作高潮，引向下一阶段的冒险。"
+    scenes:
+      -
+        location: "谢云家的堂屋"
+        time: "深夜（接前场）"
+        goal: "两人共同解读信件内容，达成共识，决定立刻去旧宅取证据。"
+        conflict: "对过去懦弱的悔恨与对未知危险的恐惧，最终被寻找真相的决心克服。"
+        beats:
+          -
+            order: 1
+            action: "两人在灯下读信，发现顾长明颤抖的字迹和十年前火灾非意外的真相。"
+            emotional_shift: "震惊、悔恨与愤怒"
+          -
+            order: 2
+            action: "谢云承认当年的懦弱，两人在十年的隔阂中达成某种和解，积怨退后。"
+            emotional_shift: "释怀与悲壮的默契"
+          -
+            order: 3
+            action: "陆铭提出立刻去旧宅，谢云拿起挂在门后的外套，两人一同走入夜色之中。"
+            emotional_shift: "坚定、决然与行动的开始"
+        characters:
+          - "陆铭"
+          - "谢云"
+        dialogue_candidates:
+          -
+            speaker: "谢云"
+            line: "我早就知道，但我以为我们都选择了不去知道。"
+            intent: "自我剖析，承认当年的懦弱与逃避，表达深深的悔恨。"
+          -
+            speaker: "谢云"
+            line: "什么时候去。"
+            intent: "下定决心，正式与陆铭结盟，直面过去。"
+          -
+            speaker: "陆铭"
+            line: "现在，趁还没有别人先找到。"
+            intent: "展现行动力，营造时间紧迫感，推动剧情进入下一阶段。"
+generation:
+  tool: novel_to_script_gemini
+  mode: gemini_semantic_draft
+  notes:
+    - "当前版本基于 Google Gemini 结构化输出技术生成。"
+    - "角色动机、场景潜台词及节拍由 AI 提炼，可直接作为高质量改编参考。"
