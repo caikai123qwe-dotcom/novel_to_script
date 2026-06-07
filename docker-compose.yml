@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # 后端服务
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: novel_to_script_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL_NAME=${GEMINI_MODEL_NAME:-gemini-2.5-flash}
+      # 绑定主机的 Clash 代理。在 Docker 容器中，host.docker.internal 代表宿主机电脑
+      - HTTP_PROXY=http://host.docker.internal:7890
+      - HTTPS_PROXY=http://host.docker.internal:7890
+      - http_proxy=http://host.docker.internal:7890
+      - https_proxy=http://host.docker.internal:7890
+      - NO_PROXY=127.0.0.1,localhost,backend
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # 允许容器内访问宿主机的代理端口
+
+  # 前端服务
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: novel_to_script_frontend
+    restart: always
+    ports:
+      - "8501:8501"
+    environment:
+      # 💡 极其重要：在 Docker 容器内部，前端访问 FastAPI 后端不能再写 127.0.0.1
+      # 必须改成 http://backend:8000 这样 Docker 内网 DNS 才会自动解析
+      - STREAMLIT_API_BASE=http://backend:8000
+    depends_on:
+      - backend
